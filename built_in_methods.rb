@@ -6,23 +6,23 @@
 # The downcase method is called on the string object "Hello World"
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
-"Hello World".downcase
+puts "Hello World".downcase
+#downcase makes ever letter in a string lowercased
 
+puts "Hello World".include?("Hello")
+#include checks if a string is included in string and returns a boolean result
 
-"Hello World".include?("Hello")
+puts "Hello World".end_with?("Hello")
+#end_with? checks if a string is at the end of a string and returns a boolean result
 
+puts "Hello World".end_with?("rld")
+#see above
 
-"Hello World".end_with?("Hello")
+puts 12.even?
+#even? checks if an integer is even and returns a boolean result
 
-
-"Hello World".end_with?("rld")
-
-
-12.even?
-
-
-18.next
-
+puts 18.next
+#next returns the given integer + 1
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
