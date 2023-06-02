@@ -36,10 +36,19 @@ puts 18.next
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
 # In this example, the return value is true, because "Jeff" does start with "J".
 # The puts command prints the return value of the start_with? method (true) to the console.
-first_name = "Jeff"
-puts first_name.start_with?("J")
+# first_name = "Jeff"
+# puts first_name.start_with?("J")
 
+dogs = "Butler and Porter"
+cats = "Juniper and Tonic"
 
+#gsub replaces every instance of a given string or set of characters in an array with a new string and returns the amended string
+#in this case all vowels will be replaced by *
+puts dogs.gsub(/[aeiou]/, '*')
+
+#prepend places a new string at the beginning of the given string and returns the amended string
+#in this case "My cats are " will be amended to the front of my defined cats string
+puts cats.prepend("My cats are ")
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
