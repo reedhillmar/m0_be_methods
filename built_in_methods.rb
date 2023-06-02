@@ -62,7 +62,7 @@ miles = 2087
 #lcm will compare a defined integer to another integer and return the least common multiple of the two
 puts goals.lcm(55)
 
-#round will round the defined integer to the nearest value with a given precision
+#round will round the defined integer to the nearest value with a given precision and return the result
 puts miles.round(-2)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -70,3 +70,12 @@ puts miles.round(-2)
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+states = ["Colorado", "Texas", "Arkansas", "Nevada"]
+colors = ["red", "purple", "green", "blue"]
+
+#insert will insert a given string, integer, etc. into an array at a defined index position and return the new array
+p states.insert(3, "Maryland", "Wisconsin", "New York")
+
+#keep_if will keep elements in an array if they match the given limitations and return the amended array
+p colors.keep_if{|element|element.start_with?("p")}
