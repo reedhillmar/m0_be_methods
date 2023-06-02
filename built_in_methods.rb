@@ -56,7 +56,14 @@ puts cats.prepend("My cats are ")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+goals = 63
+miles = 2087
 
+#lcm will compare a defined integer to another integer and return the least common multiple of the two
+puts goals.lcm(55)
+
+#round will round the defined integer to the nearest value with a given precision
+puts miles.round(-2)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
